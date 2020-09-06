@@ -1,6 +1,6 @@
 from behave import *
 
-from tests.acceptance.page_model.home_page import HomePage
+from tests.acceptance.features.page_model.home_page import HomePage
 
 use_step_matcher('re')
 

@@ -11,6 +11,7 @@ Feature: Test covid and register popups in homepage
     And Covid message pops up
     And I click on Continuar button
     And Covid popup is invisible
+    And Homepage elements are present
     When Register message pops up
     Then I click on Ya estoy registrado button
     And Register popup is invisible
