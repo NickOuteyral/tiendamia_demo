@@ -35,8 +35,15 @@ def step_impl(context, element_id):
     context.browser.find_element_by_id(element_id)
 
 
+@then('Popup with id "(.*)" is invisible')
+def step_impl(context, element_id):
+    WebDriverWait(context.browser, 60).until(
+        EC.invisibility_of_element_located((By.ID, element_id))
+    )
+
+
 def wait_for_element_id(context, element_id):
-    WebDriverWait(context.browser, 10).until(
-        EC.presence_of_element_located((By.ID, element_id))
+    WebDriverWait(context.browser, 60).until(
+        EC.visibility_of_element_located((By.ID, element_id))
     )
 
