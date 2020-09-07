@@ -22,7 +22,7 @@ the Gherkin plugin, which are required to successfully run the tests. There are 
 that must be addressed. The settings can be modified at the tab Run-->Edit Configurations of PyCharm. These configs
 should look something like this:
 
-![Image of Configuration Settings](https://ibb.co/vcwLgvC)
+![Image of Configuration Settings](https://github.com/NickOuteyral/tiendamia_demo/blob/create_search_test/images/run%20configs.PNG)
 
 As shown in the image, the features folder absolute path must be defined in the parameters field. As for execution 
 of the tests, all tests can be executed by pressing the 'play' button, at the top right of the PyCharm IDE
